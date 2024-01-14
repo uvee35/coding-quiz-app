@@ -25,3 +25,9 @@ function clearHighScores() {
     // Reload high scores to update the display
     loadHighScores();
 }
+
+// Event listener for the clear highscores button
+document.getElementById("clear").addEventListener("click", clearHighScores);
+
+// Load high scores when the page is loaded
+loadHighScores();
