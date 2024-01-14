@@ -16,3 +16,12 @@ function loadHighScores() {
         highScoresList.appendChild(scoreItem);
     });
 }
+
+// Function to clear high scores
+function clearHighScores() {
+    // Clear high scores from local storage
+    localStorage.removeItem("highScores");
+
+    // Reload high scores to update the display
+    loadHighScores();
+}
