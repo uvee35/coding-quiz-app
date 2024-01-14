@@ -114,7 +114,7 @@ function saveHighScore() {
 submitButton.addEventListener('click', saveHighScore);
 
 // Event listeners
+
 startButton.addEventListener('click', startQuiz);
+
 submitButton.addEventListener('click', saveHighScore);
-
-
