@@ -87,3 +87,36 @@ function endQuiz() {
     endScreenElement.classList.remove('hide');
     finalScoreElement.textContent = score;
 }
+
+function saveHighScore() {
+    const initials = initialsInput.value.trim();
+
+    if (initials !== '') {
+        const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+        const newScore = { score, initials };
+        highScores.push(newScore);
+        highScores.sort((a, b) => b.score - a.score); 
+        localStorage.setItem('highScores', JSON.stringify(highScores));
+
+        // Clear the input field after saving
+        initialsInput.value = '';
+    } else {
+        // Prompt the user if the initials field is empty
+        alert("Please enter your initials!");
+    }
+    ///////////////////////////////////////////////
+
+    // Redirect to the high scores page
+    window.location.href = 'highscores.html'; 
+
+    
+    ///////////////////////////////////////////////
+}
+
+submitButton.addEventListener('click', saveHighScore);
+
+// Event listeners
+startButton.addEventListener('click', startQuiz);
+submitButton.addEventListener('click', saveHighScore);
+
+
