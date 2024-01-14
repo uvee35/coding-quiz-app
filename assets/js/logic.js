@@ -12,3 +12,78 @@ const finalScoreElement = document.getElementById('final-score');
 const initialsInput = document.getElementById('initials');
 const submitButton = document.getElementById('submit');
 let timerInterval; 
+
+// Function to start the quiz
+function startQuiz() {
+    document.getElementById('start-screen').classList.add('hide');
+    questionElement.parentElement.classList.remove('hide');
+    timeRemaining = 60;
+    score = 0;
+    currentQuestionIndex = 0;
+
+    startTimer();
+    showQuestion();
+}
+
+// Function to display the current question
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.title;
+    choicesElement.innerHTML = '';
+
+    // Create buttons for each choice
+    currentQuestion.choices.forEach(choice => {
+        const button = document.createElement('button');
+        button.textContent = choice;
+        button.addEventListener('click', () => selectAnswer(choice));
+        choicesElement.appendChild(button);
+    });
+}
+
+// Function to handle answer selection
+function selectAnswer(choice) {
+    const feedbackElement = document.getElementById('feedback');
+
+    if (questions[currentQuestionIndex].answer === choice) {
+        score++;
+        feedbackElement.textContent = "Correct!";
+    } else {
+        timeRemaining -= 10; // Penalty for wrong answer
+        feedbackElement.textContent = "Wrong!";
+    }
+
+    // Show feedback for a short time then go to the next question
+    feedbackElement.classList.remove('hide');
+    setTimeout(() => {
+        feedbackElement.classList.add('hide');
+
+        currentQuestionIndex++;
+        if (currentQuestionIndex === questions.length) {
+            endQuiz();
+        } else {
+            showQuestion();
+        }
+    }, 1000); // Display feedback for 1 second
+}
+
+// Function to start and manage the quiz timer
+function startTimer() {
+    timerElement.textContent = timeRemaining;
+    timerInterval = setInterval(() => {
+        timeRemaining--;
+        timerElement.textContent = timeRemaining;
+
+        if (timeRemaining <= 0) {
+            clearInterval(timerInterval);
+            endQuiz();
+        }
+    }, 1000);
+}
+
+// Function to end the quiz
+function endQuiz() {
+    clearInterval(timerInterval);
+    questionElement.parentElement.classList.add('hide');
+    endScreenElement.classList.remove('hide');
+    finalScoreElement.textContent = score;
+}
