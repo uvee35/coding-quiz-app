@@ -104,13 +104,11 @@ function saveHighScore() {
         // Prompt the user if the initials field is empty
         alert("Please enter your initials!");
     }
-    ///////////////////////////////////////////////
+    
 
     // Redirect to the high scores page
     window.location.href = 'highscores.html'; 
-
     
-    ///////////////////////////////////////////////
 }
 
 submitButton.addEventListener('click', saveHighScore);
