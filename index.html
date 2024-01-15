@@ -48,6 +48,24 @@
     <script src="./assets/js/questions.js""></script>
     <script src="./assets/js/logic.js"></script>
     <script src="./assets/js/display.js"></script>
+    
+    <!-- Create audio objects for the sound effects -->
+    <script>
+      const correctSound = new Audio('sfx/correct.wav');
+      const incorrectSound = new Audio('sfx/incorrect.wav');
+
+  
+
+    // Function to play the correct sound
+    function playCorrectSound() {
+    correctSound.play();
+}
+
+    // Function to play the incorrect sound
+     function playIncorrectSound() {
+    incorrectSound.play();
+}
+</script>
 
 
   </body>

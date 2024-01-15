@@ -64,21 +64,24 @@ function selectAnswer(choice) {
             showQuestion();
         }
     }, 1000); // Display feedback for 1 second
+
+
 }
 
 // Function to start and manage the quiz timer
 function startTimer() {
     timerElement.textContent = timeRemaining;
     timerInterval = setInterval(() => {
-        timeRemaining--;
-        timerElement.textContent = timeRemaining;
-
-        if (timeRemaining <= 0) {
+        if (timeRemaining > 0) {
+            timeRemaining--;
+            timerElement.textContent = timeRemaining;
+        } else {
             clearInterval(timerInterval);
             endQuiz();
         }
     }, 1000);
 }
+
 
 // Function to end the quiz
 function endQuiz() {
