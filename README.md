@@ -12,8 +12,7 @@ To use the Code Quiz Web Application, follow these instructions:
 
 1. Clone the Repository:
    ```
-   git clone [repository-url]
-   ```
+   git clone [https://uvee35.github.io/coding-quiz-app/]
 
 2. Open the `index.html` file in your preferred web browser.
 
@@ -78,7 +77,7 @@ Enjoy taking the Code Quiz and test your JavaScript knowledge!
 
 1. Clone the Repository:
    ```
-   git clone []
+   git clone [https://uvee35.github.io/coding-quiz-app/]
    ```
 
 2. Open the `index.html` file in your preferred web browser.
@@ -120,7 +119,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 ## Contact
 
 - Victor Marques - [victormarquesrina@hotmail.com]
-- Project Link: [GitHub Repository](https://github.com/uvee35/password-generator)
+- Project Link: [GitHub Repository](https://github.com/uvee35/coding-quiz-app)
 - LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/victor-marques-rina-944209102/))
 
 ## Acknowledgements
