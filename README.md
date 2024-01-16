@@ -4,7 +4,6 @@
 
 This web application is a timed coding quiz that tests your knowledge of JavaScript fundamentals. It provides a set of multiple-choice questions and records your high scores. The quiz is designed to help coding boot camp students gauge their progress compared to their peers. The app features a clean and responsive user interface, powered by JavaScript code that dynamically updates HTML and CSS.
 
-Certainly! Here's how you can add an "Instructions" and "Features" section to your README for the Code Quiz Web Application:
 
 ## Instructions
 
