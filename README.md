@@ -1,4 +1,4 @@
-## Code Quiz Web Application
+## Code Quiz App
 
 ## Project Overview
 
