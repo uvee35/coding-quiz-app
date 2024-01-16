@@ -41,15 +41,21 @@ function showQuestion() {
 }
 
 // Function to handle answer selection
+
+const correctSound = new Audio('assets/js/sfx/correct.wav');
+const wrongSound = new Audio('assets/js/sfx/incorrect.wav');
+
 function selectAnswer(choice) {
     const feedbackElement = document.getElementById('feedback');
 
     if (questions[currentQuestionIndex].answer === choice) {
         score++;
         feedbackElement.textContent = "Correct!";
+        correctSound.play();
     } else {
         timeRemaining -= 10; // Penalty for wrong answer
         feedbackElement.textContent = "Wrong!";
+        wrongSound.play();
     }
 
     // Show feedback for a short time then go to the next question
