@@ -12,7 +12,7 @@ To use the Code Quiz Web Application, follow these instructions:
 
 1. Clone the Repository:
    ```
-   git clone [https://uvee35.github.io/coding-quiz-app/]
+   git clone [https://github.com/uvee35/coding-quiz-app]
 
 2. Open the `index.html` file in your preferred web browser.
 
@@ -68,6 +68,10 @@ The Code Quiz Web Application offers the following features:
 Enjoy taking the Code Quiz and test your JavaScript knowledge!
   
 ## Mock-Up
+
+https://uvee35.github.io/coding-quiz-app/
+
+
 <img width="2232" alt="Screenshot 2024-01-16 at 22 56 01" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/1c7f18be-6903-4d05-92f2-2f1056db8715">
 <img width="2232" alt="Screenshot 2024-01-16 at 21 44 18" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/757a8847-f989-4eb1-a310-e4d6970ee386">
 <img width="1111" alt="Screenshot 2024-01-16 at 21 44 18 (2)" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/098bf5af-75ae-402f-b96e-8c559ed831d1">
