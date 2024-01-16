@@ -69,11 +69,10 @@ The Code Quiz Web Application offers the following features:
 Enjoy taking the Code Quiz and test your JavaScript knowledge!
   
 ## Mock-Up
-
-<img width="1106" alt="Screenshot 2024-01-16 at 21 41 52" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/7790c3a7-f9c7-4f90-b360-e6d2791cce83">
+<img width="2232" alt="Screenshot 2024-01-16 at 22 56 01" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/1c7f18be-6903-4d05-92f2-2f1056db8715">
 <img width="2232" alt="Screenshot 2024-01-16 at 21 44 18" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/757a8847-f989-4eb1-a310-e4d6970ee386">
-<img width="1116" alt="Screenshot 2024-01-16 at 21 44 18 (2)" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/141d0a53-daab-414f-9ed1-34baafc249ef">
-<img width="2232" alt="Screenshot 2024-01-16 at 21 44 18" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/4ada218b-0c42-4f7f-83fe-e285558493ec">
+<img width="1111" alt="Screenshot 2024-01-16 at 21 44 18 (2)" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/098bf5af-75ae-402f-b96e-8c559ed831d1">
+<img width="1342" alt="Screenshot 2024-01-16 at 21 45 51" src="https://github.com/uvee35/coding-quiz-app/assets/151088688/fab81848-562d-4cf7-bdee-b71aee6a020c">
 
 ## How to Use
 
